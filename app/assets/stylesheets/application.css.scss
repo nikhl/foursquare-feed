@@ -1,0 +1,46 @@
+/*
+ *= require_self
+ *= require_tree .
+*/
+@import 'bootstrap';
+@import 'bootstrap/variables';
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+a {
+  &:hover {
+    color: #549ce4;
+  }
+}
+
+.left-column {
+  float: right;
+}
+
+.header {
+  text-align: center;
+}
+
+h5{
+  color: #58A3F5;
+}
+
+.right-panel {
+  width: 90%;
+}
+
+.welcome-text {
+  float: right;
+  padding: 5px;
+}
+
+.right-panel-content {
+  padding: 5px;
+  margin-top: 30px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foursquare Feed</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="header">
+    <h3> Foursquare Feed (Checkins, tips ....) </h3>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+        <%= render :partial => 'layouts/left_panel'%>
+      </div>
+      <div class="span9">
+        <div class="right-panel">
+          <div class="welcome-text">
+            <h5>
+              Welcome <%= current_user.name %> ( <a href="/signout">Sign Out</a> )
+            </h5>
+          </div>
+          <div class="right-panel-content">
+            <%= yield %>
+          </div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

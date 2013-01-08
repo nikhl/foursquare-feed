@@ -1,0 +1,20 @@
+<div class="provider-text">
+  <h5>All of your Foursquare-feed well organized</h5>
+</div>
+<% if @posts %>
+<div class="paginate-top">
+  <%= paginate @posts %>
+</div>
+<div class="provider-feed">
+  <% @posts.each do |post| %>
+  <div class="post">
+  	<div class="post-text">
+  		<%= post.content %>
+  	</div>
+  </div>
+  <% end %>
+</div>
+<div class="paginate-bottom">
+  <%= paginate @posts %>
+</div>
+<% end %>

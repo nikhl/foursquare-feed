@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Foursquare Feed</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h3>Welcome to Foursquare Feed</h3>
+  <br>
+  <h3> Sign in using </h3>
+  <div class="signin_foursquare">
+    <a href="/auth/foursquare"><%= image_tag("foursquare_64.jpg") %></a>
+    <div class="foursquare_label">
+      Foursquare
+    </div>
+  </div>
+</body>
+</html>
