@@ -17,7 +17,7 @@ end
 gem 'jquery-rails'
 gem 'twitter_bootstrap_form_for'
 
-gem 'mongoid', '~> 3.0.2'
+gem 'mongoid'
 
 gem 'kaminari'
 gem 'omniauth-foursquare'

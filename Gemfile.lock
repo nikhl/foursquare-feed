@@ -152,7 +152,7 @@ DEPENDENCIES
   foursquare2
   jquery-rails
   kaminari
-  mongoid (~> 3.0.2)
+  mongoid
   omniauth-foursquare
   pg
   rails (= 3.2.10)
